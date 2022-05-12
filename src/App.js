@@ -1,10 +1,10 @@
-import Home from "./pages/Home/index";
+import AboutMe from "./pages/About me/index";
 import './main.css';
   
 function App() {
   return (
   <>
-  <Home/>
+  <AboutMe/>
   </>    
   );
 }
