@@ -1,10 +1,28 @@
 import Navigation from "../../components/Navigation/index"
 import "./style.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFacebook,faGithub,faInstagram} from "@fortawesome/free-brands-svg-icons"
+import {faFacebook,faGithub,faInstagram} from "@fortawesome/free-brands-svg-icons";
+import {useState, useEffect} from "react";
+import Loader from "../../components/Loader";
+
 const AboutMe = () => {
+const [loading, setIsLoading] = useState(true);
+
+useEffect(() => {
+    if (loading) {
+    setTimeout(() => {
+    setIsLoading(false);
+  }, 800);
+}
+},[loading])
+
     return (
         <>
+        {loading && 
+            <Loader/>
+        }
+        {!loading &&
+            <>
             <Navigation/>
             <div className="heading-container">
                 <div className="heading">
@@ -45,6 +63,9 @@ const AboutMe = () => {
                 </div>
             </div>
         </>
+        }
+        </>
+
     )
 }
 
