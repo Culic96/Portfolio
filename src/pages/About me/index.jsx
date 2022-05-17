@@ -11,7 +11,7 @@ const AboutMe = () => {
                     <h2>Hello World</h2>
                 </div>
                 <div className="heading-desc">
-                    <h4>Hi, I'm Nikola<br></br> and I'm an <br></br>front<span>end</span> developer!</h4>
+                    <h4>Hi, I'm Nikola<br></br> and I'm a <br></br>front<span>end</span> developer!</h4>
                 </div>
                 <div className="tech-heading">
                     <h2>My technologies</h2>
@@ -41,7 +41,7 @@ const AboutMe = () => {
                 <div className="footer-icons">
                     <a href="https://www.facebook.com/nikola.culic.1" target="_blank"><FontAwesomeIcon icon={faFacebook} style={{fontSize: '32px', color: "#4267B2"}}/></a> 
                     <a href="https://github.com/Culic96" target="_blank"><FontAwesomeIcon icon={faGithub} style={{fontSize: '32px', color: "#333"}} /></a>
-                    <a href="https://www.instagram.com/tupactello/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{fontSize: '32px', color: "#fbad50"}}/></a>
+                    <a href="https://www.instagram.com/tupactello/" target="_blank"><FontAwesomeIcon icon={faInstagram} style={{fontSize: '32px', color: "#fccc63"}}/></a>
                 </div>
             </div>
         </>
