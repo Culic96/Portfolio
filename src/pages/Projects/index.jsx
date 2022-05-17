@@ -1,11 +1,26 @@
 import Navigation from "../../components/Navigation/index";
 import "./style.css";
+import {useState, useEffect} from "react";
+import Loader from "../../components/Loader";
 const Projects = () => {
+const [loading, setIsLoading] = useState(true);
 
-
+useEffect(() => {
+    if (loading) {
+    setTimeout(() => {
+    setIsLoading(false);
+  }, 800);
+}
+},[loading])
 
     return (
         <>
+        {loading &&
+            <Loader/>
+        }
+        
+        {!loading &&
+        <>        
         <Navigation/>
         <div className="proj-container">
             <div className="proj-header">
@@ -44,6 +59,9 @@ const Projects = () => {
             </div>
         </div>
         </>
+        }
+        </>
+        
     )
 }
 
