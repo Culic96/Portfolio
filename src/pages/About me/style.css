@@ -7,7 +7,19 @@
     color: #fff;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     z-index: 999;
+    animation: fade-in 2s ease;
+    transition: "all" 2s ease;
+}
 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
 }
 
 .heading {
@@ -17,23 +29,30 @@
     align-items: center;
     text-align: center;
     text-transform: uppercase;
+
 }
 
 .heading h2 {
     font-size: 2rem;
     font-weight: 500;
+    animation: fade-in 2s ease;
+
 }
 
 .heading-desc{
     margin-top: 1.2rem;
     text-align: center;
     text-transform: uppercase;
+    animation: fade-in 2s ease;
+
 }
 
 .heading-desc h4{
     position: relative;
     font-weight: 300;
     font-size: 1.6rem;
+    animation: fade-in 2s ease;
+
 }
 
 .heading-desc span {
@@ -53,6 +72,8 @@
     font-size: 2rem;
     font-weight: 500;
     text-transform: uppercase;
+    animation: fade-in 2s ease;
+
 }
 
 .tech-wrapper {
@@ -72,6 +93,8 @@
 .tech-desc h3 {
     font-size: 1.5rem;
     font-weight: 300;
+    animation: fade-in 2s ease;
+
 }
 
 .tech-desc img {
@@ -97,6 +120,8 @@
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
+    animation: fade-in 2s ease;
+
 }
 
 .footer-social {
@@ -110,6 +135,7 @@
     font-size: 1.2rem;
     font-weight: 300;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    animation: fade-in 2s ease;
 
 }
 
@@ -118,6 +144,8 @@
     justify-content: space-evenly;
     align-items: center;
     margin-top: 0.5rem;
+    animation: fade-in 2s ease;
+
 }
 
 
