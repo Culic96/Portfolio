@@ -106,3 +106,29 @@
     width: 80%;
     transition: all 0.5s ease;
 }
+
+@media (max-width: 400px) {
+    .proj-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .proj-one {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 40vh;
+    }
+
+    .proj-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 40vh;
+        
+    }
+}
